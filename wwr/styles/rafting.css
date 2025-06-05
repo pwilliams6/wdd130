@@ -22,6 +22,8 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
 }
 
 footer {
@@ -46,7 +48,7 @@ nav, p, section, article {
     width: 40px;
     height: 40px;
     margin: 0 8px;
-    object-fit: middle;
+    object-fit: cover;
 }
 
 .socialmedia {
