@@ -1,7 +1,7 @@
 :root {
     --primary-color: #20844D;
     --secondary-color: #355834;
-    --accent1-color: #6F8EBD;
+    --accent1-color: #4A6E91;
     --accent2-color: #C2A878;
     --heading-font: "Bebas Neue", sans-serif;
     --body-font: "Roboto", sans-serif;
@@ -19,45 +19,50 @@ body {
     background-color: #fff;
 }
 
-header, main, footer {
-    width: 840px;
+.container {
+    max-width: 840px;
     margin: 0 auto;
-    width: 100%;
     padding: 0 16px;
 }
 
-footer {
-    width: 840px;
-    text-align: center;
-    margin: 0 auto;
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 16px;
+    gap: 20px;
+}
+
+header img {
+    max-height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-
+    margin-bottom: 8px;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: 500;
 }
 
-.socialmedia img {
-    width: 40px;
-    height: 40px;
-    margin: 0 8px;
-    object-fit: cover;
-}
-
-.socialmedia {
-    text-align: center;
-    margin-top: 16px;
+nav a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 .hero {
     position: relative;
+    margin-top: 16px;
 }
 
 .hero img {
@@ -74,7 +79,7 @@ nav, p, section, article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff
+    color: #fff;
 
 }
 
@@ -95,4 +100,33 @@ nav, p, section, article {
     margin-left: 12px;
     border-radius: 6px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin-top: 32px;
+}
+
+section img {
+    width: 150px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px 0;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    object-fit: cover;
 }
