@@ -130,3 +130,47 @@ footer {
     margin: 0 8px;
     object-fit: cover;
 }
+form {
+    margin-top: 16px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
